@@ -1,0 +1,10 @@
+# File generati dalla compilazione
+bin/
+obj/
+
+# File di sistema del Mac
+.DS_Store
+
+# Impostazioni locali degli editor
+.vs/
+*.user

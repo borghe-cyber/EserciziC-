@@ -1,0 +1,30 @@
+Supponiamo si stia sviluppando un gioco intitolato L’Orto Magico. In questo gioco un contadino
+può coltivare diversi tipi di ortaggi: può seminare, può innaffiare, può raccogliere l’ortaggio
+quando è maturo. Ogni volta che il contadino raccoglie un ortaggio, ottiene un valore che può
+essere negativo, zero oppure positivo, dipendentemente se l’ortaggio è stato raccolto troppo
+presto, al momento giusto (maturo), oppure troppo tardi. L’ortaggio, infatti, dopo essere stato
+seminato, deve essere innaffiato un certo numero di volte ed ogni tipo di ortaggio ha il suo
+numero di innaffiate “giusto”. Se viene raccolto prima che questo numero è stato raggiunto,
+oppure dopo che questo numero è stato superato, si otterrà un frutto acerbo oppure marcio.
+Supponiamo di avere tre tipi di ortaggi (Zucchina, Peperone, Pomodoro) che dipendono da una
+classe Ortaggio (si decida se Ortaggio debba essere un’interfaccia o una classe astratta - una
+scelta in questo caso è migliore dell’altra). Il contadino crea un orto che è una lista di ortaggi di
+diversi tipi. Il numero di ortaggi per tipo è scelto casualmente. Il contadino innafia, un numero
+casuale di volte, ogni ortaggio prima di raccoglierlo. Infine, conta il numero di ortaggi che sono
+stati raccolti acerbi, maturi o marci. Le attività del contadino possono essere descritte in una
+classe OrtoMagicoTest, che viene parzialmente fornita con l’esercizio. Si completi la classe
+di test e si implementino le classi Ortaggio (sia essa classe astratta o interfaccia), Zucchina,
+Peperone, Pomodoro, considerando che ognuno di questi ortaggi ha bisogno di un numero
+crescente di innaffiate prima di maturare. Si implementino dei metodi (polimorfici) innaffia e
+raccogli che si possono chiamare per ogni ortaggio. La semina avviene quando si costruisce
+l’oggetto. Infine, considerare che ogni ortaggio può marcire anticipatamente al verificarsi di
+alcune condizioni specifiche per ogni ortaggio. Ad esempio, il pomodoro può essere attaccato
+dalle cimici, le zucchine mangiate dalle lumache e i peperoni marcire per colpa di funghi.
+Sentitevi liberi di implementare questi fenomeni aggiuntivi a livello di ogni singola classe come
+preferite. In mancanza di idee specifiche, si può pensare che ad ogni innaffiata delle zucchine,
+con probabilità 0.5, possono arrivare le lumache; oppure possono formarsi i funghi che attaccano
+le radici dei pomodori con una probabilità crescente rispetto al numero delle innaffiate; infine, le
+cimici aumentano di un certo numero casuale ad ogni innaffiata, ma sono pericolose per i
+pomodori solo dopo aver superato una determinata soglia massima.
+Naturalmente è possibile aggiungere tutti i metodi e le classi che si reputano utili o necessarie per
+eseguire l’esercizio, oltre quelle menzionate.
